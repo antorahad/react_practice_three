@@ -1,0 +1,26 @@
+import './App.css'
+
+function App() {
+  
+    const handleAlert = () => {
+        alert(`I'm learning React Js`);
+    }
+
+    const getInfo = () => {
+      prompt(`What is your name?`);
+    }
+
+    const addSum = (num1, num2) => {
+        console.log (num1 + num2);
+    }
+  return (
+    <>
+      <h3>React Core Concepts Part-2</h3>
+      <button onClick={handleAlert}>Click Me</button>
+      <button onClick={getInfo}>Get info</button>
+      <button onClick={() => addSum(5, 5)}>Sum</button>
+    </>
+  )
+}
+
+export default App
